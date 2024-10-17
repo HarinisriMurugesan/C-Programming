@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    char light;
+    printf("Enter the color of the traffic light (r, y, g): ");
+    scanf(" %c", &light);
+    switch (light) {
+        case 'r': printf("Stop\n"); break;
+        case 'y': printf("Get ready\n"); break;
+        case 'g': printf("Go\n"); break;
+        default: printf("Invalid input\n");
+    }
+    return 0;
+}
