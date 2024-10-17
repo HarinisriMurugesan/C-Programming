@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+    int oranges, glasses;
+    printf("Enter the number of oranges: ");
+    scanf("%d", &oranges);
+
+    glasses = oranges / 5;
+    printf("Number of glasses of orange juice: %d\n", glasses);
+    return 0;
+}
