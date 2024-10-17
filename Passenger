@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int total_passengers = 108;
+    int rows, seats_per_row;
+
+    printf("Enter the number of rows: ");
+    scanf("%d", &rows);
+
+    seats_per_row = total_passengers / rows;
+    printf("Number of seats in each row: %d\n", seats_per_row);
+    return 0;
+}
