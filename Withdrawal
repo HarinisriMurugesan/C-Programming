@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    int balance = 1000, withdrawal;
+    printf("Enter the amount to withdraw: ");
+    scanf("%d", &withdrawal);
+    if (withdrawal <= balance && withdrawal > 0) {
+        balance -= withdrawal;
+        printf("Withdrawal successful. Remaining balance: %d\n", balance);
+    } else {
+        printf("Insufficient balance or invalid amount.\n");
+    }
+    return 0;
+}
