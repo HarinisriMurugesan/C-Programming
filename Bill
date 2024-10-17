@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+    int units;
+    float bill = 0;
+    printf("Enter the number of units consumed: ");
+    scanf("%d", &units);
+    if (units <= 100) {
+        bill = units * 84;
+    } else if (units <= 200) {
+        bill = (100 * 84) + ((units - 100) * 168);
+    } else {
+        bill = (100 * 84) + (100 * 168) + ((units - 200) * 252);
+    }
+    printf("Total electricity bill: ₹%.2f\n", bill);
+    return 0;
+}
