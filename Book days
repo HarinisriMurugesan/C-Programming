@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main() {
+    int overdue_days;
+    int fine = 0;
+    printf("Enter the number of days the book is overdue: ");
+    scanf("%d", &overdue_days);
+    if (overdue_days > 7) {
+        fine = (overdue_days - 7) * 5; 
+    }
+    printf("The fine for the overdue book is: Rs.%d\n", fine);
+    return 0;
+}
