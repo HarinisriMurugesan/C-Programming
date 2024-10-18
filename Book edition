@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int first_edition = 50525;
+    int second_edition = 40399;
+    int total_copies = first_edition + second_edition;
+    
+    printf("Total number of copies published: %d\n", total_copies);
+    return 0;
+}
