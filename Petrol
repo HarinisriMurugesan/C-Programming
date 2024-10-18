@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+    int X, Y, total_spent;
+    printf("Enter the amount spent on petrol on Wednesday: ");
+    scanf("%d", &X);
+    printf("Enter the amount spent more on Thursday: ");
+    scanf("%d", &Y);
+    total_spent = X + (X + Y);
+    printf("Total amount spent on petrol: %d\n", total_spent);
+    return 0;
+}
