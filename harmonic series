@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+    int n;
+    float sum=0;
+    printf("Enter the n term :");
+    scanf("%d",&n);
+    for(int i=0;i<n;i++)
+    {
+        sum+=1/i;
+    }
+    printf("hormonic series of n term :%.2f\n",sum);
+}
+
+_____________________________________________________________________________________________
+
+OUTPUT :
+
+          Enter the n term :5
+          hormonic series of n term :1.00
