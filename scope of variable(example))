@@ -1,0 +1,23 @@
+#include<stdio.h>
+int gvariable =10;
+void main()
+{
+    int lvariable =20;
+    printf("global value : %d \n",gvariable);
+    printf("local value : %d \n",lvariable);
+    void display()
+    {
+        int lvariable =30;
+        printf("Global value %d",gvariable);
+        printf("local value %d",lvariable);
+    }
+}
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+OUTPUT :
+
+global value : 10 
+local value : 20 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
