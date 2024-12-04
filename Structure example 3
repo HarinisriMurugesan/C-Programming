@@ -1,0 +1,48 @@
+#include <stdio.h>
+struct students 
+{ 
+    int id;
+    char name[20];
+};
+void main()
+{
+    struct students s[4];
+    for (int i=0;i<4;i++)
+    {
+        printf ("enter a id :");
+        scanf ("%d",&s[i].id);
+        printf("enter a name :");
+        scanf ("%s",&s[i].name);
+    }
+    for (int i=0;i<4;i++)
+    {
+        printf ("%d",s[i].id);
+        printf ("%s",s[i].name); 
+    }
+}
+
+
+*********************************************************************
+
+OUTPUT:
+
+  enter a id :24
+
+  enter a name :kabhilan
+
+  enter a id :26
+
+  enter a name : harinisri harinisri 
+
+  enter a id :30
+
+  enter a name :dheepshi
+
+  enter a id :16
+
+  enter a name :lakshana
+
+   24 kabhilan  26 harinisri 30 dheepshi 16 lakshana
+
+
+****************************************************************************
