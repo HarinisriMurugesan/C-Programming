@@ -1,0 +1,51 @@
+#include<stdio.h>
+struct student 
+{
+    int id;
+    char name [20];
+};
+void display (struct student *);
+void main()
+{
+    struct student s[2];
+    for (int i=0;i<2;i++)
+    {
+       printf (" enter a id :");
+       scanf ("%d",&s[i].id);
+       printf (" enter a name :");
+       scanf ("%s",&s[i].name);
+    }
+    for (int i=0;i<2;i++)
+    {
+        display (&s[i]);
+    }
+}
+void display (struct student *p)
+{
+    printf ("%d\n",p->id);
+    printf ("%s\n",p->name);
+}
+
+
+***********************************************************
+
+OUTPUT :
+
+  enter a id :1
+
+  enter a name : Murugesan Murugesan 
+
+  enter a id :2
+
+  enter a name :Harinisri 
+
+  1
+
+  Murugesan
+
+  2
+
+  Harinisri
+
+
+************************************************************
