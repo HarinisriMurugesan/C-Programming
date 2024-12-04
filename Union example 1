@@ -1,0 +1,30 @@
+#include <stdio.h>
+union student 
+{ 
+    int id;
+    char name[20];
+};
+void main()
+{
+    union student s;
+    printf ("enter a id :");
+    scanf ("%d",&s.id);
+    printf ("%d",s.id);
+    printf ("\nenter a name :");
+    scanf ("%s",&s.name);
+    printf ("%s",s.name);
+}
+
+*******************************************************************
+
+OUTPUT :
+
+  enter a id :1
+
+  1
+
+  enter a name :💙
+
+  💙
+
+*********************************************************************
