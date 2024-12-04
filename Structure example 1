@@ -10,9 +10,9 @@ void main()
     printf ("enter a id :");
     scanf ("%d",&s.id);
     printf ("enter a name :");
-    scanf ("%d",&s.name);
+    scanf ("%s",&s.name);
     printf ("%d",s.id);
-    printf ("%d",s.name);
+    printf ("%s",s.name);
 }
 
 ***************************************************
