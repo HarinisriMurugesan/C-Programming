@@ -1,0 +1,30 @@
+#include<stdio.h>
+struct student 
+{
+    int id;
+    char name [20];
+};
+void main()
+{
+    struct student s;
+    struct student*p =&s;
+    printf (" enter a id :");
+    scanf ("%d",&s.id);
+    printf (" enter a name :");
+    scanf ("%s",&s.name);
+    printf ("%d/n",(*p).id);
+    printf ("%s/n",(*p). name);
+}
+
+
+********************************************************
+
+OUTPUT:
+
+  enter a id :24
+
+  enter a name :renuka 
+
+  24/nrenuka/n
+
+***********************************************************
