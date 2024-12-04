@@ -1,0 +1,26 @@
+#include<stdio.h>
+struct student 
+{
+    int id;
+    char name [20];
+};
+void main()
+{
+    struct student s={24,"kabhilan"};
+    struct student x=s;
+    printf ("%d\n",x.id);
+    printf ("%s\n",x.name);
+    printf ("%d",sizeof(x));
+}
+
+**************************************************************
+
+OUTPUT :
+
+  24
+
+  kabhilan
+
+  24
+
+***************************************************************
